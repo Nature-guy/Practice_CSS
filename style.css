@@ -1,0 +1,39 @@
+body {
+    margin:0;
+}
+a {
+    color:black;
+    text-decoration: none;
+}
+h1 {
+    font-size:45px;
+    text-align: center;
+    border-bottom: gray solid 1px;
+    margin:0;
+    padding:30px;
+}
+ul {
+    border-right: gray solid 1px;
+    width: 150px;
+    margin-top: 0;
+}
+#grid {
+    display:grid;
+    grid-template-columns: 200px 1fr;
+}
+#picture {
+    padding:3px;
+    margin-top:8px;
+}
+.text-rainbow {
+    background-image: linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-size: 40px;
+}
+@media(max-width: 800px) {
+    #grid {display:block;}
+    ul {border-right:none;}
+    h1 {border-bottom:none;}
+}
